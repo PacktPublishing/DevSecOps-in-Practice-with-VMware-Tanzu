@@ -1,0 +1,36 @@
+# Replace the AZ names based on the region selected
+AWS_NODE_AZ: "us-east-1a"
+AWS_NODE_AZ_1: "us-east-1b"
+AWS_NODE_AZ_2: "us-east-1c"
+
+AWS_PRIVATE_NODE_CIDR: "10.0.16.0/20"
+AWS_PRIVATE_NODE_CIDR_1: "10.0.17.0/20"
+AWS_PRIVATE_NODE_CIDR_2: "10.0.18.0/20"
+AWS_PROFILE: "tkg"
+AWS_PUBLIC_NODE_CIDR: "10.0.0.0/20"
+AWS_PUBLIC_NODE_CIDR_1: "10.0.1.0/20"
+AWS_PUBLIC_NODE_CIDR_2: "10.0.2.0/20"
+
+# Replace the region name that is configure with AWS_PROFILE
+AWS_REGION: "us-east-1"
+
+# Replace the SSH key name with your SSH key name available 
+# in the selected region
+AWS_SSH_KEY_NAME: "replace-it-with-your-keypair-name"
+
+BASTION_HOST_ENABLED: "false"
+CLUSTER_CIDR: "100.96.0.0/11"
+CLUSTER_NAME: "tkg-aws-workload-cluster"
+CLUSTER_PLAN: "dev"
+CONTROL_PLANE_MACHINE_TYPE: "t3.large"
+ENABLE_AUDIT_LOGGING: "false"
+ENABLE_CEIP_PARTICIPATION: "true"
+ENABLE_MHC: "true"
+IDENTITY_MANAGEMENT_TYPE: "none"
+INFRASTRUCTURE_PROVIDER: "aws"
+NODE_MACHINE_TYPE: "t3.large"
+OS_ARCH: "amd64"
+OS_NAME: "amazon"
+OS_VERSION: "2"
+SERVICE_CIDR: "100.64.0.0/13"
+TKG_HTTP_PROXY_ENABLED: "false"
