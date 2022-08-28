@@ -1,0 +1,51 @@
+profile: full
+
+shared:
+  ingress_domain: mydomain.com # some domain you control
+
+ceip_policy_disclosed: true
+buildservice:
+  kp_default_repository: "gcr.io/<gcp_project_id>/tbs" # plug in your gcp project id
+  kp_default_repository_username: "_json_key"
+  kp_default_repository_password: |
+    {contents of your gcp json key file}
+
+supply_chain: basic
+
+ootb_supply_chain_basic:
+  registry:
+    server: "gcr.io"
+    repository: "<gcp_project_id>" # plug yours in
+  git_ops:
+    ssh_secret: ""
+
+tap_gui:
+  service_type: ClusterIP
+  app_config:
+    app:
+      baseUrl: http://tap-gui.mydomain.com # tap-gui + your domain
+    catalog:
+      locations:
+        - type: url
+          target: https://github.com/PacktPublishing/DevSecOps-in-Practice-with-VMware-Tanzu/yelb-catalog/blob/main/catalog-info.yaml # you can clone and point to your own if you want
+    backend:
+      baseUrl: http://tap-gui.mydomain.com # tap-gui + your domain
+      cors:
+        origin: http://tap-gui.mydomain.com # tap-gui + your domain
+
+metadata_store:
+  ns_for_export_app_cert: "workload1"
+  app_service_type: ClusterIP
+
+scanning:
+  metadataStore:
+    url: "" # Disable embedded integration since it's deprecated
+
+grype:
+  namespace: "workload1"
+  targetImagePullSecret: "registry-credentials"
+
+contour:
+  envoy:
+    service:
+      type: LoadBalancer # this is why we prefer to do this on public cloud Kubernetes
