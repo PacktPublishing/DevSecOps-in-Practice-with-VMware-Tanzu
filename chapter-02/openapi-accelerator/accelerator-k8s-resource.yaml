@@ -14,6 +14,7 @@ spec:
     - rest
   git:
     ignore: ".git/"
-    url: https://github.com/rhardt-pivotal/openapi-accelerator
+    url: https://github.com/robhardt/DevSecOps-in-Practice-with-VMware-Tanzu
+    subPath: chapter-02/openapi-accelerator 
     ref:
       branch: main
