@@ -1,0 +1,62 @@
+accelerator:
+  displayName: OpenAPI Accelerator
+  description: A Spring Boot Server Implementation of the OpenAPI 3.0 Spec you pass in
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+  tags:
+    - java
+    - spring
+    - openAPI
+  options:
+    - name: openApiSpec
+      inputType: textarea
+      defaultValue: |
+        openapi: 3.0.3
+        info:
+          version: 1.0.0
+          title: Example.com
+          termsOfService: 'https://example.com/terms/'
+          contact:
+            email: contact@example.com
+            url: 'http://example.com/contact'
+          license:
+            name: Apache 2.0
+            url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+          x-logo:
+            url: 'https://apis.guru/openapi-template/logo.png'
+          description: >
+            # Your description here
+        externalDocs:
+          description: Find out how to create a GitHub repo for your OpenAPI definition.
+          url: 'https://github.com/Rebilly/generator-openapi-repo'
+        tags:
+          - name: Echo
+            description: Example echo operations
+          - name: User
+            description: Operations about user
+          - name: Noop
+            description: Operations that aren't
+        servers:
+          - url: 'http://example.com/api/v1'
+          - url: 'https://example.com/api/v1'
+        paths: []
+        components:
+          securitySchemes: []
+        security:
+          - SecretAPIKey: []
+          - JWT: []
+
+      required: true
+
+engine:
+  type: Merge
+  sources:
+    - type: Chain
+      transformations:
+        - type: Include
+          patterns: ['**/openapi-v3.0.yaml']
+        - type: ReplaceText
+          substitutions:
+          - text: api-spec
+            with: "#openApiSpec"
+    - type: Include
+      patterns: ['**/*.java', '**/*.gradle', '**/gradlew*', 'gradle/**']

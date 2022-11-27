@@ -1,0 +1,19 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: openapi-accelerator
+  namespace: accelerator-system
+spec:
+  displayName: OpenAPI 3.0 Spring Boot
+  description: Takes an OpenAPI 3.0 spec and gives you a Spring Boot skeleton API application
+  iconUrl: https://github.com/simple-starters/icons/raw/master/icon-cloud.png
+  tags:
+    - spring
+    - cloud
+    - openapi
+    - rest
+  git:
+    ignore: ".git/"
+    url: https://github.com/rhardt-pivotal/openapi-accelerator
+    ref:
+      branch: main
