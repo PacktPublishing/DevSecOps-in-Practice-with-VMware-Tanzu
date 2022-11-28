@@ -1,0 +1,17 @@
+.DS_Store
+.gradle
+**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+scripts/out/
+**/secrets/
+
+### VS Code ###
+.project
+.settings
+
