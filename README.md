@@ -42,17 +42,17 @@ With the following software and hardware list you can run all code files present
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
 | 1-13 | Tanzu Application Accelerator | Windows, Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Build Service | Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Build Service | Windows, Mac OS X, and Linux (Any) |
 | 1-13 | VMware Application Catalog | Windows, Mac OS X, and Linux (Any) |
-| 1-13 | API portal for VMware Tanzu | Mac OS X, and Linux (Any) |
-| 1-13 | Spring Cloud Gateway | Mac OS X, and Linux (Any) |
-| 1-13 | Harbor | Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Kubernetes Grid | Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Community Edition | Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Application Platform | Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Mission Control | Mac OS X, and Linux (Any) |
-| 1-13 | VMware Aria Operations for Applications | Mac OS X, and Linux (Any) |
-| 1-13 | Tanzu Service Mesh | Mac OS X, and Linux (Any) |
+| 1-13 | API portal for VMware Tanzu | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Spring Cloud Gateway | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Harbor | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Kubernetes Grid | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Community Edition | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Application Platform | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Mission Control | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | VMware Aria Operations for Applications | Windows, Mac OS X, and Linux (Any) |
+| 1-13 | Tanzu Service Mesh | Windows, Mac OS X, and Linux (Any) |
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]( https://static.packt-cdn.com/downloads/9781803241340_ColorImages.pdf)
 
